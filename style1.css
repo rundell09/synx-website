@@ -1,0 +1,134 @@
+/* General improvements for all smaller screens */
+@media screen and (max-width: 1400px) {
+    #profile {
+      height: 83vh;
+      margin-bottom: 6rem;
+    }
+    .about-containers {
+      flex-wrap: wrap;
+    }
+    #contact,
+    #projects {
+      height: fit-content;
+    }
+  }
+  
+  /* Tablet and small laptop screens */
+  @media screen and (max-width: 1200px) {
+    #desktop-nav {
+      display: none;
+    }
+    #hamburger-nav {
+      display: flex;
+    }
+    #experience,
+    .experience-details-container {
+      margin-top: 2rem;
+    }
+    #profile,
+    .section-container {
+      display: block;
+    }
+    .arrow {
+      display: none;
+    }
+    section,
+    .section-container {
+      height: fit-content;
+    }
+    section {
+      margin: 0 5%;
+    }
+    .section__pic-container {
+      width: 300px; /* Adjusted for smaller screens */
+      height: auto; /* Maintain aspect ratio */
+      margin: 0 auto 2rem;
+    }
+    .about-containers {
+      margin-top: 0;
+    }
+  }
+  
+  /* Mobile screens */
+  @media screen and (max-width: 600px) {
+    #contact,
+    footer {
+      height: auto; /* Allow natural content height */
+      padding: 1rem;
+    }
+    #profile {
+      height: auto; /* Allow the content to define height */
+      margin-bottom: 0;
+    }
+    article {
+      font-size: 0.9rem; /* Slightly smaller for readability */
+      line-height: 1.4; /* Ensure readability */
+    }
+    footer nav {
+      height: fit-content;
+      margin-bottom: 2rem;
+    }
+    .about-containers,
+    .contact-info-upper-container,
+    .btn-container {
+      flex-wrap: wrap;
+    }
+    .contact-info-container {
+      margin: 0;
+      text-align: center; /* Center-align text for better layout */
+    }
+    .contact-info-container p,
+    .nav-links li a {
+      font-size: 1rem;
+    }
+    .experience-sub-title {
+      font-size: 1.1rem;
+    }
+    .logo {
+      font-size: 1.5rem;
+    }
+    .nav-links {
+      flex-direction: column;
+      gap: 0.5rem;
+      text-align: center;
+    }
+    .section__pic-container {
+      width: 90%; /* Use a percentage for better scaling */
+      height: auto;
+      justify-content: center;
+    }
+    .section__text__p2 {
+      font-size: 1rem;
+    }
+    .title {
+      font-size: 1.75rem;
+      text-align: center; /* Ensure titles align nicely on smaller screens */
+    }
+    .text-container {
+      text-align: justify;
+      padding: 0 1rem; /* Add horizontal padding for better readability */
+    }
+  }
+  
+  /* Very small phones (e.g., 320px width) */
+  @media screen and (max-width: 360px) {
+    .logo {
+      font-size: 1.25rem;
+    }
+    .title {
+      font-size: 1.5rem;
+    }
+    article {
+      font-size: 0.8rem;
+    }
+    .nav-links {
+      gap: 0.25rem;
+    }
+    .contact-info-container p,
+    .nav-links li a {
+      font-size: 0.9rem;
+    }
+    .section__text__p2 {
+      font-size: 0.9rem;
+    }
+  }
